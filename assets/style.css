@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .navbar {
+    font-family: 'Roboto', serif;
     background-color: transparent;
 }
 .navbar.navbar-expand-lg.fixed-top .nav-link {
@@ -36,14 +37,17 @@
     margin-top: 20px;
 }
 .card-body-2{
+    font-family: 'Roboto', serif;
     background-color: #00ffff;
 }
 
-h2{
+h2 , h5 {
+    font-family: 'Roboto', serif;
     color: white;
     text-align: center;
 }
 p{
+    font-family: 'Roboto', serif;
     color: white;
 }
 
@@ -104,5 +108,36 @@ p{
     }
     50% {
         opacity: 0;
+    }
+}
+
+/* Estilos para animar el movimiento de los botones de Redes Sociales */
+.social-icons a {
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    transform: scale(2.5);
+}
+
+#botonenviar {
+    transition: transform 0.2s ease-in-out;
+}
+
+#botonenviar:hover {
+    transform: scale(1.1);
+}
+
+#mi-navbar .navbar-brand img {
+    animation: rotateAnimation 5s infinite linear;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

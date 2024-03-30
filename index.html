@@ -12,25 +12,25 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      />
+        referrerpolicy="no-referrer"/>
 
     <!-- Boostrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"/>
+
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="assets/style.css" />
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/viajes.svg" alt="NADYA TE AMO" height="30" style="margin-left: 40px;">
@@ -43,20 +43,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Inicio</a>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Acerca</a>
+                            <a class="nav-link" href="#quienessomos">Quienes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
+                            <a class="nav-link" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
-        <!-- Carrusel -->
+    <!-- Carrusel -->
+    <header>
         <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -78,15 +78,17 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        
-        <div class="mi-contenedor">
-            <h2 class="text-center">¿ Quienes Somos ?</h2>
+</header>
+    <!-- Cards Containers text and icons -->
+    <article id="quienessomos">
+        <div class="mi-contenedor" style="background-color: black; padding: 45px 2px">
+            <h2>¿ QUIENES SOMOS ?</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card border-primary mb-3">
                         <div class="card-header" style="background-color: #00ffff; color: white;">
-                            <i class="fa fa-plane"></i>
+                            <i id="avion" class="fa fa-plane"></i>
                         </div>
                         <div class="card-body text-primary">
                             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -99,18 +101,18 @@
                     <div class="card border-primary mb-3">
                         <div class="card-body text-primary">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quia officia nisi, beatae nesciunt labore illo sit ab, molestiae odio excepturi rerum eligendi molestias similique voluptates. 
+                                Quia officia nisi, beatae nesciunt labore illo sit ab, molestiae odio excepturi rerum eligendi molestias similique voluptates.
                                 Quidem corrupti quibusdam omnis delectus.</p>
                         </div>
-                        <div class="card-header" style="background-color: #00ffff; color: white;">
-                            <i class="fa-solid fa-mountain"></i>
+                        <div class="card-header" style="background-color: #00ffff; color: white; display: flex; justify-content: center; align-items: center;">
+                            <i id="montanas" class="fa-solid fa-mountain"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card border-primary mb-3">
-                        <div class="card-header" style="background-color: #00ffff; color: white;">
-                            <i class="fa-solid fa-route"></i>
+                        <div class="card-header" style="background-color: #00ffff; color: white; display: flex; justify-content: center; align-items: center;">
+                            <i id="ruta" class="fa-solid fa-route"></i>
                         </div>
                         <div class="card-body text-primary">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat natus distinctio tempore similique officia illum debitis dolore esse saepe aspernatur, corrupti molestiae perferendis, suscipit enim velit quae, earum corporis! Illum!</p>
@@ -120,74 +122,90 @@
             </div>
         </div>
     </div>
+</article>
 
-    <div class="contenedor-img">
-        <h2 class="text-center">Destacados</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="Imagen 1">
-                    <div class="card-body-2">
-                        <h5 class="card-title">Título 1</h5>
-                        <p class="card-text">Descripción o texto relacionado con la imagen 1.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="assets/img/card2.jpg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body-2">
-                        <h5 class="card-title">Título 2</h5>
-                        <p class="card-text">Descripción o texto relacionado con la imagen 2.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="assets/img/card3.jpg" class="card-img-top" alt="Imagen 3">
-                    <div class="card-body-2">
-                        <h5 class="card-title">Título 3</h5>
-                        <p class="card-text">Descripción o texto relacionado con la imagen 3.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="assets/img/card4.jpg" class="card-img-top" alt="Imagen 4">
-                    <div class="card-body-2">
-                        <h5 class="card-title">Título 4</h5>
-                        <p class="card-text">Descripción o texto relacionado con la imagen 4.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+    <!-- Cards Container Images -->
+<main id="destacados">
+    <div class="cards-contenedor" style="background-color: black;">
+        <h2>DESTACADOS</h2>
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Formulario de Contacto</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+        <div class="row">
+    
+            <!-- Contenedor 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 1</h5>
+                        <p class="card-text">Descripción de la tarjeta 1.</p>
                     </div>
-                    <div class="mb-3">
-                        <label for="asunto" class="form-label">Asunto</label>
-                        <input type="text" class="form-control" id="asunto" placeholder="Ingresa el asunto" required>
+                </div>
+            </div>
+    
+            <!-- Contenedor 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 2</h5>
+                        <p class="card-text">Descripción de la tarjeta 2.</p>
                     </div>
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Ingresa tu mensaje" required></textarea>
+                </div>
+            </div>
+    
+            <!-- Contenedor 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 3</h5>
+                        <p class="card-text">Descripción de la tarjeta 3.</p>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="background-color: #00ffff;">Enviar</button>
-                </form>
+                </div>
+            </div>
+    
+            <!-- Contenedor 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta 4</h5>
+                        <p class="card-text">Descripción de la tarjeta 4.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
+    </div>
+</main>
+    <!-- Contact Form -->
+    <section id="contacto">
+        <div class="container-form" style="background-color: black; padding: 20px 20px;">
+            <div class="container mt-5">
+                <h2 class="text-center mb-4" style="color: white;">CONTACTO</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label" style="color: white;">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required style="background-color: white;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label" style="color: white;">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" placeholder="Ingresa el asunto" required style="background-color: white;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label" style="color: white;">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Ingresa tu mensaje" required style="background-color: white;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="background-color: #00ffff; border-color: #00ffff;">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Footer Container -->
     <footer class="bg-dark text-white py-4">
         <div class="container d-flex justify-content-between align-items-center">
             <h5 class="mb-0">Viajes Chile</h5>
@@ -200,17 +218,14 @@
         </div>
     </footer>
     
-        <!-- Bootstrap JS y Popper.js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        
-        </body>
-        </html>
-        
     <!-- Boostrap JS -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+    </script>
+
+    <!-- JS personalizado -->
+    <script src="assets/function.js"></script>
+</body>
 </html>

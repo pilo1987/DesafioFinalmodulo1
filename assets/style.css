@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 .navbar {
-    background-color: transparent !important;
+    background-color: transparent;
 }
-.navbar.navbar-expand-lg.fixed-top {
-    background-color: transparent !important;
+.navbar.navbar-expand-lg.fixed-top .nav-link {
+    background-color: transparent;
+    color: white;
+}
+.navbar.colored {
+    background-color: #00ffff !important;
+}
+.navbar.colored .nav-link {
+    color: black !important;
 }
 .carousel-inner img {
     width: 100%;
@@ -16,33 +23,86 @@
 }
 .card-header {
     display: flex;
-    justify-content: center;
     height: 50px;
 }
 .card-body{
     background-color: black;
 }
-p{
-    color: white;
+.mi-contenedor h2{
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .row {
     margin-top: 20px;
 }
-.mi-contenedor {
-    background-color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-h2{
-    color: white;
-}
 .card-body-2{
     background-color: #00ffff;
 }
-.contenedor-img{
-    background-color: black;
+
+h2{
+    color: white;
+    text-align: center;
 }
-.card-img-top {
-    width: 260px;
-    height: 200px;
+p{
+    color: white;
+}
+
+/* Estilos para animar el movimiento horizontal del avión en tarjeta */
+#avion {
+    position: relative;
+    animation-name: moverHorizontal;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 2em;
+}
+
+@keyframes moverHorizontal {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 30px);
+        opacity: 0.2;
+    }
+}
+
+/* Estilos para animar el movimiento de sacudir montañas en tarjeta */
+#montanas {
+    transform-origin: center;
+    animation: moverMontanas 30s linear infinite, parallax 10s infinite;
+    font-size: 2em;
+}
+
+@keyframes moverMontanas {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes parallax {
+    0%, 100% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1.6);
+    }
+}
+
+/* Estilos para animar el movimiento de intermitenci en tarjeta */
+#ruta {
+    animation: flashEffect 1.2s linear infinite;
+    font-size: 2em;
+}
+
+@keyframes flashEffect {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }

@@ -31,7 +31,12 @@
 }
 .mi-contenedor h2{
     padding-top: 20px;
-    padding-bottom: 30px;
+}
+.cards-contenedor{
+    padding-top: 1px;
+}
+.destacados h2{
+    padding-bottom: 10px;
 }
 .row {
     margin-top: 20px;
@@ -50,7 +55,11 @@ p{
     font-family: 'Roboto', serif;
     color: white;
 }
-
+.container-principal{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 1px;
+}
 /* Estilos para animar el movimiento horizontal del avión en tarjeta */
 #avion {
     position: relative;
@@ -139,11 +148,24 @@ p{
     }
 }
 
-/* Estilos para animar el movimiento de los boton enviar del Formulario */
+/* Estilos para animar el movimiento del Navbar */
 #inicio, #quienes, #contact, #destaca {
     transition: transform 0.2s ease-in-out;
 }
 #inicio:hover , #destaca:hover ,#quienes:hover, #contact:hover{
     transform: scale(1.2);
     color: chartreuse;
+}
+#sucursales .container-map {
+    background-color: black;
+}
+
+#sucursales h2 {
+    color: white;
+    text-align: center;
+    margin-top: 0; /* Eliminar el margen superior */
+}
+
+.embed-responsive {
+    margin-bottom: 0; /* Eliminar el margen inferior del iframe */
 }

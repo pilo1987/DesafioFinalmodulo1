@@ -60,7 +60,6 @@ p{
     animation-timing-function: linear;
     font-size: 2em;
 }
-
 @keyframes moverHorizontal {
     0% {
         left: 0;
@@ -77,7 +76,6 @@ p{
     animation: moverMontanas 30s linear infinite, parallax 10s infinite;
     font-size: 2em;
 }
-
 @keyframes moverMontanas {
     0% {
         transform: translateX(100%);
@@ -86,7 +84,6 @@ p{
         transform: translateX(-100%);
     }
 }
-
 @keyframes parallax {
     0%, 100% {
         transform: scale(0.5);
@@ -96,12 +93,11 @@ p{
     }
 }
 
-/* Estilos para animar el movimiento de intermitenci en tarjeta */
+/* Estilos para animar el movimiento de intermitencia en tarjetas */
 #ruta {
     animation: flashEffect 1.2s linear infinite;
     font-size: 2em;
 }
-
 @keyframes flashEffect {
     0%, 100% {
         opacity: 1;
@@ -116,19 +112,20 @@ p{
     transition: transform 0.2s ease-in-out;
     display: inline-block;
 }
-
 .social-icons a:hover {
     transform: scale(2.5);
 }
 
+/* Estilos para animar el movimiento de los boton enviar del Formulario */
 #botonenviar {
     transition: transform 0.2s ease-in-out;
 }
-
 #botonenviar:hover {
     transform: scale(1.1);
+    color: black;
 }
 
+/* Estilos para animar y girar SVG */
 #mi-navbar .navbar-brand img {
     animation: rotateAnimation 5s infinite linear;
 }
@@ -140,4 +137,13 @@ p{
     to {
         transform: rotate(360deg);
     }
+}
+
+/* Estilos para animar el movimiento de los boton enviar del Formulario */
+#inicio, #quienes, #contact, #destaca {
+    transition: transform 0.2s ease-in-out;
+}
+#inicio:hover , #destaca:hover ,#quienes:hover, #contact:hover{
+    transform: scale(1.2);
+    color: chartreuse;
 }
